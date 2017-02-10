@@ -9,10 +9,4 @@ class CouchDBGameRepositoryTests: GameRepositoryTests {
         super.setUp()
     }
 
-    override func tearDown() {
-        super.tearDown()
-        guard let gameRepository = gameRepository else { return }
-        gameRepository.deleteAll()
-    }
-
 }
