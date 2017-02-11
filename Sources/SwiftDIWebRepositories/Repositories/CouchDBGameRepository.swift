@@ -70,6 +70,8 @@ public class CouchDBGameRepository: GameRepository {
                         let game = Game(p1: p1, p2: p2, result: result, id: UUID(uuidString: uuidString))
                         completion(game)
                     }
+                } else {
+                    completion(nil)
                 }
             }
         }
